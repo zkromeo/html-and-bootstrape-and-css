@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        h1{ padding: 0 0 0 40px;}
+
+        .container{
+            background: lightcoral;
+            width: 650px;
+            margin: 50px auto 0;
+             
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,600fr);
+
+            grid-template-rows: repeat(2,150px);
+
+            grid-auto-rows: 80px;
+        }
+        
+        .item1{background: orange;order:1;}
+        .item1{background: red;order:2;}
+        .item1{background:blue;order:3;}
+        .item1{background: blueviolet;order:4;}
+        .item1{background: brown;order:5;}
+        .item1{background:chartreuse;order:6;}
+
+        .items{color: aqua;font-size: 20px;font-weight: bold;}
+    </style>
+
+</head>
+<body>
+    <h1>css grid order</h1>
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item1">two</div>
+        <div class="items item1">three</div>
+        <div class="items item1">four</div>
+        <div class="items item1">five</div>
+        <div class="items item1">six</div>
+
+    </div>
+</body>
+</html>

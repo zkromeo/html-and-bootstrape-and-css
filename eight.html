@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text over flow</title>
+    <style>
+        @font-face {
+         font-family: openSans;
+         src: url(OpenSans-Regular-webfont.eot),
+            url(OpenSans-Regular-webfont.woff);
+         }
+        #box{
+            width: 300px;
+            border: 5px solid greenyellow;
+            column-count: 3;
+         column-gap: 30px;
+         column-rule: 2px;
+         font-family: openSans;
+         user-select:none;
+         
+        }
+        h1{
+            column-span: all;
+            font-family: openSans;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>how are you</h1>
+        A machine that computes. Specifically, a modern computer is a digital electronic system that performs complex calculations or compiles, correlates, or otherwise processes data based on instructions in the form of stored programs and input data. A device that can receive, store, retrieve, process, and output data. 5.
+        A machine that computes. Specifically, a modern computer is a digital electronic system that performs complex calculations or compiles, correlates, or otherwise processes data based on instructions in the form of stored programs and input data. A device that can receive, store, retrieve, process, and output data. 5
+        A machine that computes. Specifically, a modern computer is 
+    </div>
+    
+</body>
+</html>

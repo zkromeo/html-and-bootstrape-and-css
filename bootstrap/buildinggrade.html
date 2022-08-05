@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    .container{
+        background: lightgray;
+        width: 700px;
+        margin: 70px 0 0 50px;
+        
+
+        display: grid;
+     grid-template-columns:300px 300px auto;
+      grid-template-rows:300px 300px auto;
+
+
+      grid-gap: 20px;
+    }
+    .items1{
+        background: blue;
+        grid-area: 1/3/3/4;
+
+
+    }
+    .items2{
+        background: blueviolet;
+        grid-column:1/3 ;
+    }
+    .items3{
+        background: brown;
+    }
+    .items4{
+        background:chartreuse;
+    }
+    .items5{
+        background:chocolate;
+    }
+    .items6{
+        background: darkcyan;
+    }
+</style>
+<body>
+    <h1>welcome</h1>
+    <div class="container">
+    <div class="items items1">first</div>
+    <div class="items items2">second</div>
+    <div class="items items3">third</div>
+    <div class="items items4">forth</div>
+    <div class="items items5">fifth</div>
+    <div class="items items6">sixth</div>
+
+    </div>
+</body>
+</html>
